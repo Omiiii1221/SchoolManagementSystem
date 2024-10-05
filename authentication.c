@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <conio.h> // For getch()
+#include <conio.h> 
 #include "authentication.h"
 #include <unistd.h> // for Linux sleep
 #include <windows.h>
 
-// Function to get user input securely for password
+
 void get_password(char *password, int maxLength)
 {
     int i = 0;
@@ -14,7 +14,7 @@ void get_password(char *password, int maxLength)
     while (i < maxLength - 1 && (ch = getch()) != '\r')
     {
         if (ch == '\b' && i > 0)
-        { // Handle backspace
+        { 
             printf("\b \b");
             i--;
         }
@@ -27,7 +27,7 @@ void get_password(char *password, int maxLength)
     password[i] = '\0';
 }
 
-// Function to sign up
+
 void signup()
 {
     system("cls");
@@ -39,7 +39,7 @@ void signup()
     }
 
     struct user user;
-    // getchar(); // Clear buffer
+   
 
     printf("\n\t\t\t\t\t\t\tEnter your full Name: ");
     fgets(user.fullname, sizeof(user.fullname), stdin);
@@ -78,7 +78,7 @@ void signup()
     printf("\n\n\t\t\t\t\t\t\tlogging in!\n");
 }
 
-// Function to log in
+// Function to log in to system
 void login(const char *role)
 {
     
@@ -86,7 +86,7 @@ void login(const char *role)
     char username[50], password[50];
     int found = 0;
 
-    getchar(); // Clear buffer
+    getchar(); 
 
     printf("\n\n\n\t\t\t\t\t\tEnter username: ");
     fgets(username, sizeof(username), stdin);
@@ -133,29 +133,3 @@ void login(const char *role)
         getchar();
     }
 }
-// int main()
-// {
-//     int choice;
-//     char role[20];
-//     printf("1. Sign up\n");
-//     printf("2. Log in\n");
-//     printf("Enter your choice: ");
-//     scanf("%d", &choice);
-
-//     switch (choice)
-//     {
-//     case 1:
-//         signup();
-//         break;
-//     case 2:
-
-//         printf("Enter your role (admin/principal/Accountant/Teacher/student): ");
-//         scanf("%s", role);
-//         login(role);
-//         break;
-//     default:
-//         printf("Invalid choice\n");
-//     }
-
-//     return 0;
-// }
