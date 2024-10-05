@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "getfunctions.h": "c",
+        "student.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "attendance.h": "c",
+        "windows.h": "c",
+        "employee.h": "c",
+        "ctype.h": "c",
+        "menus.h": "c",
+        "authentication.h": "c",
+        "winuser.h": "c",
+        "stdarg.h": "c"
+    }
+}
