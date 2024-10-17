@@ -1,6 +1,8 @@
 **School Management System**
 Project Overview
-The School Management System is a console-based application developed in C that allows schools to efficiently manage administrative tasks, student data, staff details, attendance, and exams. It provides role-based access, ensuring secure management of operations for admins, teachers, and students.
+The School Management System is a console-based application developed in C that allows schools to efficiently 
+manage administrative tasks, student data, staff details, attendance, and exams. It provides role-based access,
+ensuring secure management of operations for admins, teachers, and students.
 
 Key Features
 Admin Functionality:
