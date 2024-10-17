@@ -62,4 +62,3 @@ This project is licensed under the MIT License. For more details, see the LICENS
  
  
 # SchoolManagementSystem
-# SchoolManagementSystem
